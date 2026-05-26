@@ -15,7 +15,7 @@ This repository hosts the official implementation of:
 
 ## Introduction
 
-**FAN** enables **preference-aware personalization using only foundation encoders**, without additional structures or fine-tuning. By reconstructing the self-attention mechanism of transformer-based encoders, FAN integrates user preferences while preserving target fidelity. It works seamlessly with **OpenCLIP** and **Google T5** across **Stable Diffusion V1/XL/V3** and **FLUX** in text-to-image (T2I) diffusion models, and naturally extends to **CLIP retrieval**, **unCLIP**, and **vision-language models** without any modification.
+**FAN** enables **preference-aware personalization using only foundation encoders**, without additional structures or fine-tuning. By reconstructing the self-attention mechanism of transformer-based encoders, FAN integrates user preferences while preserving target fidelity. It works seamlessly with **OpenCLIP** and **Google T5** across **Stable Diffusion V1/XL/V3** and **FLUX** in text-to-image (T2I) diffusion models, and naturally extends to **multimodal retrieval**, **image-conditioned generation**, **vision-language understanding**, and **group- and brand-level conditioning** without any modification.
 
 <p align="center">
     <img src="asset/method.png" width="400">
@@ -144,25 +144,25 @@ FAN works with a wide variety of foundation T2I models that uses text encoders w
 
 ## Other applications
 
-- **unCLIP**
-
-<p align="center">
-    <img src="asset/unclip.png" width="600">
-</p>
-
-- **CLIP retrieval**
+- **Multimodal retrieval (CLIP retrieval)**
 
 <p align="center">
     <img src="asset/clip_search.png" width="670">
 </p>
 
-- **Vision-language models**
+- **Image-conditioned generation (unCLIP)**
+
+<p align="center">
+    <img src="asset/unclip.png" width="600">
+</p>
+
+- **Vision-language understanding**
 
 <p align="center">
     <img src="asset/vlm.png" width="600">
 </p>
 
-- **Group- and brand- based conditioning**
+- **Group- and brand-level generation**
 
 <p align="center">
     <img src="asset/group.png" width="800">
